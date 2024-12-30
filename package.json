@@ -2,11 +2,19 @@
   "name": "big-app",
   "version": "1.0.0",
   "main": "main.js",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
 }
