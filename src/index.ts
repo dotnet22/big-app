@@ -1,16 +1,9 @@
-type Args = {
-  length: number;
-  includeUppercase: boolean;
-  includeNumbers: boolean;
-  includeSpecialChars: boolean;
-};
-
-export function generatePassword({
-  length,
-  includeUppercase,
-  includeNumbers,
-  includeSpecialChars,
-}: Args) {
+export function generatePassword(
+  length: number,
+  includeUppercase: boolean,
+  includeNumbers: boolean,
+  includeSpecialChars: boolean
+) {
   if (!length || typeof length === "string") {
     return new Error("Please provide password length");
   }

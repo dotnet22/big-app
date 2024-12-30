@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    /* If transpiling with TypeScript: */
+    "target": "ES2022",
     "module": "NodeNext",
-    "lib": ["ESNext"],
-    "target": "ESNext",
-
-    "outDir": "dist",
-    "rootDir": "src",
+    "moduleResolution": "nodenext",
+    "lib": ["es2022", "dom", "dom.iterable"],
+    "declaration": true,
     "sourceMap": true,
+
+    "rootDir": "src",
+    "outDir": "dist",
 
     /* Base Options: */
     "esModuleInterop": true,
@@ -22,13 +23,6 @@
     /* Strictness */
     "strict": true,
     "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-
-    /* AND if you're building for a library: */
-    "declaration": true,
-    /* AND if you're building for a library in a monorepo: */
-    "declarationMap": true
-  },
-  //"include": ["src"],
-  //"exclude": ["node_modules", "dist"]
+    "noImplicitOverride": true
+  }
 }
